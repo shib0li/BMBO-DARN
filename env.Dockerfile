@@ -11,15 +11,3 @@ RUN /opt/conda/bin/conda install jupyter scipy matplotlib tqdm scikit-learn pand
   && /opt/conda/bin/pip install fire \
   && /opt/conda/bin/pip install torchnet \
   && /opt/conda/bin/pip install git+https://github.com/AdamCobb/hamiltorch
-
-RUN jupyter notebook --generate-config
-
-RUN echo "" > ~/.jupyter/jupyter_notebook_config.py  \
-  && echo "c.NotebookApp.ip = '0.0.0.0'" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.allow_root=True" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.port = 8888" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.iopub_data_rate_limit = 10000000000" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.base_url='/GFGVEX/'" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.notebook_dir = '/workspace'" >> ~/.jupyter/jupyter_notebook_config.py \
-  && echo "c.NotebookApp.password = u'sha1:069012a347ba:eb2713caaca33b015d1fab4da7f0b700d7e6b467'" >> ~/.jupyter/jupyter_notebook_config.py
