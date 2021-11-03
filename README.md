@@ -19,7 +19,7 @@ BMBO-DARN is released under the MIT License, please refer the LICENSE for detail
 Please cite our work if you would like to use the code
 
 ```
-@article{li2020multi,
+@article{li2021multi,
   title={Batch Multi-Fidelity Bayesian Optimization with Deep Auto-Regressive Networks},
   author={Li, Shibo and Kirby, Robert and Zhe, Shandian},
   journal={Advances in Neural Information Processing Systems},
